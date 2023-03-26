@@ -1,0 +1,178 @@
+body{          
+  margin: 0;     
+  background: linear-gradient(137deg, #020202,#161615,#0e0e0d);
+  padding: 0;
+}
+/*navbar*/
+.navbar{
+  width: 100%;
+  height: 70px;
+  background-color:#131313;
+}
+.navbar .container{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131313;
+  margin-top: 0%;
+}
+.navbar-menu{
+  list-style-type: none;
+  padding-left: 0%;
+  margin-bottom: 0%;
+  background-color:#131313;
+}
+.navbar-menu li{
+  display: inline-block;
+}
+.navbar-menu li a{
+  display: inline-block;
+  color: #c4c3c3;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 13px;
+  margin-right: 30px;
+}
+.navbar-menu li a:hover{
+  opacity: 1;
+  transition: all 0.09s ease-in-out;
+}
+.navbar-wrap{
+  display: flex;
+  flex-flow:row nowrap ;
+}
+.navbar-brand{
+  font-size: 26px;
+  text-decoration: none;
+  color: #c4c3c3;
+  margin: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+.navbar-brand:hover{
+  color: rgb(193, 193, 193);
+  transition: all 0.09s ease-in-out;
+}
+.text-main{
+  color: #c4c3c3;
+  display: flex;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  width: 70%;
+  margin-right: 15%;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.5;
+  padding-left: 20%;
+}
+.text-title{
+  color: #c4c3c3;
+  display: flex;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: center;
+  padding-left: 5%;
+}
+.photo-main{
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  margin-left: 20%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.title-main{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: #c4c3c3;
+  text-align: center;
+  width: 80%;
+  float: left;
+ 
+}
+.main{
+  float: left; /*Задаем обтекание*/  
+  width: 100%; /*Фиксируем ширину блока*/ 
+}
+.right-menu {
+  color: #3f3d3e;
+  width: 250px;
+  padding-left: 20px;
+  height: 100vh;
+  float: right;
+  margin-top: 100px;
+}
+#right-menu{
+  background-color:black;
+  opacity: 0;
+}
+.points {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  color: #3f3d3e;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  outline: none;
+  opacity: 0.7;
+  transition: all 0.09s ease-in-out;
+}
+
+/* Div link on hover */
+.points:hover {
+  color: rgb(193, 193, 193);
+  position: relative;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  opacity: 1;
+  transition: all 0.09s ease-in-out;
+}
+
+.footer-container{
+  display: flex;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  
+}
+.row{
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+}
+.row > *{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 200px;
+  margin: 10%;
+  opacity: 0.5;
+}
+.footer-name{
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 14px;  
+}
+.footer-adres{
+  margin-right: 100px;
+}
