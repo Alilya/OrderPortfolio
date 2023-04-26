@@ -7,20 +7,73 @@
   </head>
 
   <body class="body-new-portfolio">
-   
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand"></a>
+        <div class="navbar-wrap">
+          <ul class="navbar-menu">
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="#">Научные работы</a></li>
+            <li><a href="newPortfolio.html">Другое портфолио</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-navb">
+      <div class="text-name">
+        <div class="wrapper">
+          <div class="text">
+            <h1>Никита Воробьев</h1>
+            <br />
+            <h2>Python разработчик</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="wrapper-parallax">
       <div class="parallax">
         <h1 class="parallax__layer title" data-speed="0.05">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Я python разработчик и стстемный аналитик с высшим образованием в
+          сфере IT
         </h1>
-        <button class="parallax__layer button" type="button" data-speed="0.05">
-          lorem
-        </button>
-        <div class="parallax__layer circle" data-speed="0.18"></div>
+
+        <a href="#more-text-interesting">
+          <button
+            class="parallax__layer button"
+            type="button"
+            data-speed="0.05"
+            onmousedown="viewDiv()"
+          >
+            Хм, интересно...
+          </button></a
+        >
+
+        <div class="parallax__layer circle" data-speed="0.15"></div>
+        <div class="parallax__layer circle2" data-speed="0.10"></div>
+        <div class="parallax__layer circle3" data-speed="0.11"></div>
       </div>
     </div>
+    <div class="more-info">
+      <div id="more-text-interesting">
+        <img class="photo-portfolio" src="photo/nekit.png" alt="Я" />
+        <article class="">
+          У меня гиганское портфолио и соответственно много навыков в
+          программировании
+        </article>
 
+        <div class="text-portfolio">
+          <p>Основные умения</p>
+          Благодаря опыту работы в научной сфере развил аналитические навыки для
+          эффективного решения задач. Имею опыт публикации научных статей,
+          презентаций на конференциях, что позволяет мне успешно коммуницировать
+          и представлять свою работу; Английский язык: чтение документации и
+          некоторой технической литературы.
+        </div>
+      </div>
+    </div>
     <script src="effects.js"></script>
   </body>
 </html>

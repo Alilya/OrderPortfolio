@@ -26,3 +26,9 @@ const reset = () => {
  
 wrapper.addEventListener('mousemove', handleParallax);
 wrapper.addEventListener('mouseout', reset);
+
+
+function viewDiv(){
+  document.getElementById("more-text-interesting").style.display='block';
+  document.getElementsByClassName("button").style.display='none';
+}
