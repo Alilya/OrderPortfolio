@@ -1,4 +1,4 @@
-body {
+.body-main {
   margin: 0;
   background: linear-gradient(137deg, #020202, #161615, #0e0e0d);
   padding: 0;
@@ -32,7 +32,37 @@ body {
 
 .navbar-menu li a {
   display: inline-block;
-  color: #c4c3c3;
+  color: #e4e4e4;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 15px;
+  margin-right: 30px;
+}
+
+.navbar-portfolio .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e4e4e4;
+  margin-top: 0%;
+}
+.navbar-menu-portfolio {
+  list-style-type: none;
+  padding-left: 0%;
+  margin-bottom: 0%;
+  background-color: #e4e4e4;
+}
+
+.navbar-menu-portfolio li {
+  display: inline-block;
+}
+
+.navbar-menu-portfolio li a {
+  display: inline-block;
+  color: #000000;
   opacity: 0.6;
   text-decoration: none;
   padding: 10px;
@@ -73,11 +103,12 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
   width: 70%;
-  margin-right: 15%;
-  text-align: center;
+  min-width: 200px;
+  text-align: justify;
+  margin-left: 15%;
   justify-content: center;
   opacity: 0.5;
-  padding-left: 20%;
+
 }
 
 .text-title {
@@ -90,14 +121,13 @@ body {
   margin-left: 15%;
   margin-right: 15%;
   justify-content: center;
-  padding-left: 5%;
 }
 
 .photo-main {
   margin-top: 50px;
   width: 70%;
   display: flex;
-  margin-left: 20%;
+  margin-left: 15%;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -121,12 +151,11 @@ body {
 }
 
 .right-menu {
-  color: #3f3d3e;
+  color: #c4c3c3;;
   width: min-content;
-  padding-left: 20px;
   height: 100vh;
   float: right;
-  margin-top: 100px;
+  margin-top: 5%;
 }
 
 #right-menu {
@@ -138,7 +167,7 @@ body {
 .points {
   font-family: 'Times New Roman', Times, serif;
   font-size: 14px;
-  color: #3f3d3e;
+  color: #c4c3c3;;
   display: block;
   padding: 12px;
   padding-left: 30px;
@@ -202,38 +231,44 @@ body {
   display: inline-flex;
   flex-grow: column wrap;
   color: #c4c4c3;
-  ;
-  width: 97vw;
+  width: 100vw;
 
 }
 
 .img-portfolio {
-  width: 90%;
-  height: max-content;
-  padding: 5%;
-  background-color: #414376;
-  border-top-right-radius: 15px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  opacity: 70%;
 }
 
-.img-portfolio img {
+.img-portfolio{
   width: 100%;
   border-radius: 15px;
+  background-image: img-portfolio;
+  z-index: -3;
 }
 
 .text-portfolio {
-  width: 100vw;
-  margin: 5%;
+  width: 90%;
   color: #c4c4c3;
+  align-content: center;
 }
 
 .text-about-me {
+  position: absolute;
+  top: 200px;
+  width: 70%;
+  margin-left: 15%;
   font-size: 26px;
   font-weight: 500;
   font-style: italic;
   margin-bottom: 5%;
   text-align: center;
   border: 1px solid #c4c4c3;
-  ;
+  
   border-radius: 8px;
   padding-bottom: 5%;
 }
@@ -243,6 +278,7 @@ body {
   font-size: 35px;
   font-weight: 600;
   position: relative;
+  z-index: 10;
 }
 
 .text-about-me h1::before {
@@ -250,23 +286,29 @@ body {
   position: absolute;
   left: 7%;
   bottom: 16px;
-  width: 150px;
+  width: 20%;
   height: 14px;
-  transform: skew(-12deg) translateX(-50%);
+  transform: skew(-22deg) translateX(-70%);
   background:  #7376ca;
   z-index: -1;
 }
 
 .text-main-portfolio {
+  display: flex;
+  justify-content: end;
   font-size: 20px;
   font-weight: 100;
   text-align: justify;
+  width: 50%;
+  margin-left: 25%;
+
 }
 
 .text-main-portfolio p {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
+  margin: 20px;
 }
 
 .text-more {
@@ -310,8 +352,10 @@ body {
 .table {
   white-space: wrap;
   margin-top: 10%;
-  width: fit-content;
+  width: 50%;
+  margin-left: 10%;
   text-align: justify;
+  justify-content: flex-end;
   font-size: 16px;
   font-weight: 100;
   line-height: 25px;
@@ -325,3 +369,85 @@ body {
 .link-tezis a:hover {
   color: #32335a;
 }
+
+.body-new-portfolio{
+  background-color: #e4e4e4;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  z-index: 100;
+}
+.text{
+  display: flex;
+  color: #7376ca;
+  font-family: monospace;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #7376ca;
+  width: 39ch;
+  animation: cursor 0.75s step-end infinite,
+  printed-text 3s steps(39);
+
+}
+
+@keyframes cursor{
+  0%{
+    border-color: #7376ca;
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: #7376ca;
+  }
+}
+@keyframes printed-text{
+  from{
+    width: 0;
+  }
+}
+.wrapper-parallax{
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: grid;
+  place-items: center;
+
+}
+.button{
+  display: grid;
+  place-items: center;
+
+  color: green;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.135s ease-in-out;
+}
+.title{
+  margin: 3px;
+}
+.circle{
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.parallax{
+  width: 50%;
+  padding: 5rem;
+  min-height: 10rem;
+  position: relative;
+  overflow: hidden;
+}
+.parallax__layer{
+  transition: transform 0.3s linear;
+}
+
